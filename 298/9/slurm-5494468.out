@@ -1,0 +1,916 @@
+Starting job 5494468 on c5-48 at Fri Apr 22 21:19:14 CEST 2022
+
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) StdEnv
+STOP qdyn terminated abnormally
+STOP qdyn terminated abnormally
+STOP qdyn terminated abnormally
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
+STOP qdyn terminated abnormally
+*** Error in `qdyn': free(): invalid next size (normal): 0x00000000022d4050 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x2ba6fb22d299]
+qdyn[0x438281]
+qdyn[0x4384af]
+qdyn[0x43a9d2]
+qdyn[0x46b91f]
+qdyn[0x402c25]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ba6fb1ce555]
+qdyn[0x402d35]
+======= Memory map: ========
+00400000-004f9000 r-xp 00000000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004f9000-004fa000 r--p 000f8000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fa000-004fc000 rw-p 000f9000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fc000-0056c000 rw-p 00000000 00:00 0 
+022c6000-02693000 rw-p 00000000 00:00 0                                  [heap]
+2ba6fac86000-2ba6faca8000 r-xp 00000000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2ba6faca8000-2ba6facaa000 rw-p 00000000 00:00 0 
+2ba6facb7000-2ba6facb8000 rw-p 00000000 00:00 0 
+2ba6facb8000-2ba6facd0000 r-xp 00000000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2ba6facd0000-2ba6facd1000 r--p 00017000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2ba6facd1000-2ba6facd2000 rw-p 00018000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2ba6facd2000-2ba6fad18000 r-xp 00000000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2ba6fad18000-2ba6fad19000 r--p 00045000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2ba6fad19000-2ba6fad1a000 rw-p 00046000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2ba6fad1a000-2ba6fad1e000 rw-p 00000000 00:00 0 
+2ba6fad81000-2ba6faddc000 rw-p 00000000 00:00 0 
+2ba6fae5d000-2ba6fae9e000 rw-p 00000000 00:00 0 
+2ba6faea7000-2ba6faea8000 r--p 00021000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2ba6faea8000-2ba6faea9000 rw-p 00022000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2ba6faea9000-2ba6faeaa000 rw-p 00000000 00:00 0 
+2ba6faeaa000-2ba6fafab000 r-xp 00000000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ba6fafab000-2ba6fb1aa000 ---p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ba6fb1aa000-2ba6fb1ab000 r--p 00100000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ba6fb1ab000-2ba6fb1ac000 rw-p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ba6fb1ac000-2ba6fb370000 r-xp 00000000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ba6fb370000-2ba6fb56f000 ---p 001c4000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ba6fb56f000-2ba6fb573000 r--p 001c3000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ba6fb573000-2ba6fb575000 rw-p 001c7000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ba6fb575000-2ba6fbaac000 rw-p 00000000 00:00 0 
+2ba6fc000000-2ba6fc021000 rw-p 00000000 00:00 0 
+2ba6fc021000-2ba700000000 ---p 00000000 00:00 0 
+7ffc45f8a000-7ffc45fb0000 rw-p 00000000 00:00 0                          [stack]
+7ffc45fe3000-7ffc45fe5000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2ba6fb1e23ff in ???
+#1  0x2ba6fb1e2387 in ???
+#2  0x2ba6fb1e3a77 in ???
+#3  0x2ba6fb224ed6 in ???
+#4  0x2ba6fb22d298 in ???
+#5  0x438280 in ???
+#6  0x4384ae in ???
+#7  0x43a9d1 in ???
+#8  0x46b91e in ???
+#9  0x402c24 in ???
+#10  0x2ba6fb1ce554 in ???
+#11  0x402d34 in ???
+#12  0xffffffffffffffff in ???
+/var/spool/slurmd/job5494468/slurm_script: line 77:  6262 Aborted                 (core dumped) qdyn md_0260_0740.inp > md_0260_0740.log
+*** Error in `qdyn': free(): invalid next size (normal): 0x0000000001ac9050 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x2ae736900299]
+qdyn[0x438281]
+qdyn[0x4384af]
+qdyn[0x43a9d2]
+qdyn[0x46b91f]
+qdyn[0x402c25]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ae7368a1555]
+qdyn[0x402d35]
+======= Memory map: ========
+00400000-004f9000 r-xp 00000000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004f9000-004fa000 r--p 000f8000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fa000-004fc000 rw-p 000f9000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fc000-0056c000 rw-p 00000000 00:00 0 
+01abb000-01e88000 rw-p 00000000 00:00 0                                  [heap]
+2ae736359000-2ae73637b000 r-xp 00000000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2ae73637b000-2ae73637d000 rw-p 00000000 00:00 0 
+2ae73638a000-2ae73638b000 rw-p 00000000 00:00 0 
+2ae73638b000-2ae7363a3000 r-xp 00000000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2ae7363a3000-2ae7363a4000 r--p 00017000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2ae7363a4000-2ae7363a5000 rw-p 00018000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2ae7363a5000-2ae7363eb000 r-xp 00000000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2ae7363eb000-2ae7363ec000 r--p 00045000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2ae7363ec000-2ae7363ed000 rw-p 00046000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2ae7363ed000-2ae7363f1000 rw-p 00000000 00:00 0 
+2ae736454000-2ae7364af000 rw-p 00000000 00:00 0 
+2ae736530000-2ae736571000 rw-p 00000000 00:00 0 
+2ae73657a000-2ae73657b000 r--p 00021000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2ae73657b000-2ae73657c000 rw-p 00022000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2ae73657c000-2ae73657d000 rw-p 00000000 00:00 0 
+2ae73657d000-2ae73667e000 r-xp 00000000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ae73667e000-2ae73687d000 ---p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ae73687d000-2ae73687e000 r--p 00100000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ae73687e000-2ae73687f000 rw-p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ae73687f000-2ae736a43000 r-xp 00000000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ae736a43000-2ae736c42000 ---p 001c4000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ae736c42000-2ae736c46000 r--p 001c3000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ae736c46000-2ae736c48000 rw-p 001c7000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ae736c48000-2ae73717f000 rw-p 00000000 00:00 0 
+2ae738000000-2ae738021000 rw-p 00000000 00:00 0 
+2ae738021000-2ae73c000000 ---p 00000000 00:00 0 
+7fff28e3a000-7fff28e60000 rw-p 00000000 00:00 0                          [stack]
+7fff28ee3000-7fff28ee5000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2ae7368b53ff in ???
+#1  0x2ae7368b5387 in ???
+#2  0x2ae7368b6a77 in ???
+#3  0x2ae7368f7ed6 in ???
+#4  0x2ae736900298 in ???
+#5  0x438280 in ???
+#6  0x4384ae in ???
+#7  0x43a9d1 in ???
+#8  0x46b91e in ???
+#9  0x402c24 in ???
+#10  0x2ae7368a1554 in ???
+#11  0x402d34 in ???
+#12  0xffffffffffffffff in ???
+/var/spool/slurmd/job5494468/slurm_script: line 78:  6264 Aborted                 (core dumped) qdyn md_0240_0760.inp > md_0240_0760.log
+*** Error in `qdyn': free(): invalid next size (normal): 0x0000000001dec050 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x2ae99ff53299]
+qdyn[0x438281]
+qdyn[0x4384af]
+qdyn[0x43a9d2]
+qdyn[0x46b91f]
+qdyn[0x402c25]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ae99fef4555]
+qdyn[0x402d35]
+======= Memory map: ========
+00400000-004f9000 r-xp 00000000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004f9000-004fa000 r--p 000f8000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fa000-004fc000 rw-p 000f9000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fc000-0056c000 rw-p 00000000 00:00 0 
+01dde000-021ab000 rw-p 00000000 00:00 0                                  [heap]
+2ae99f9ac000-2ae99f9ce000 r-xp 00000000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2ae99f9ce000-2ae99f9d0000 rw-p 00000000 00:00 0 
+2ae99f9dd000-2ae99f9de000 rw-p 00000000 00:00 0 
+2ae99f9de000-2ae99f9f6000 r-xp 00000000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2ae99f9f6000-2ae99f9f7000 r--p 00017000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2ae99f9f7000-2ae99f9f8000 rw-p 00018000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2ae99f9f8000-2ae99fa3e000 r-xp 00000000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2ae99fa3e000-2ae99fa3f000 r--p 00045000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2ae99fa3f000-2ae99fa40000 rw-p 00046000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2ae99fa40000-2ae99fa44000 rw-p 00000000 00:00 0 
+2ae99faa7000-2ae99fb02000 rw-p 00000000 00:00 0 
+2ae99fb83000-2ae99fbc4000 rw-p 00000000 00:00 0 
+2ae99fbcd000-2ae99fbce000 r--p 00021000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2ae99fbce000-2ae99fbcf000 rw-p 00022000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2ae99fbcf000-2ae99fbd0000 rw-p 00000000 00:00 0 
+2ae99fbd0000-2ae99fcd1000 r-xp 00000000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ae99fcd1000-2ae99fed0000 ---p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ae99fed0000-2ae99fed1000 r--p 00100000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ae99fed1000-2ae99fed2000 rw-p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ae99fed2000-2ae9a0096000 r-xp 00000000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ae9a0096000-2ae9a0295000 ---p 001c4000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ae9a0295000-2ae9a0299000 r--p 001c3000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ae9a0299000-2ae9a029b000 rw-p 001c7000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ae9a029b000-2ae9a07d2000 rw-p 00000000 00:00 0 
+2ae9a4000000-2ae9a4021000 rw-p 00000000 00:00 0 
+2ae9a4021000-2ae9a8000000 ---p 00000000 00:00 0 
+7ffc77d9c000-7ffc77dc2000 rw-p 00000000 00:00 0                          [stack]
+7ffc77dfb000-7ffc77dfd000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2ae99ff083ff in ???
+#1  0x2ae99ff08387 in ???
+#2  0x2ae99ff09a77 in ???
+#3  0x2ae99ff4aed6 in ???
+#4  0x2ae99ff53298 in ???
+#5  0x438280 in ???
+#6  0x4384ae in ???
+#7  0x43a9d1 in ???
+#8  0x46b91e in ???
+#9  0x402c24 in ???
+#10  0x2ae99fef4554 in ???
+#11  0x402d34 in ???
+#12  0xffffffffffffffff in ???
+/var/spool/slurmd/job5494468/slurm_script: line 79:  6265 Aborted                 (core dumped) qdyn md_0220_0780.inp > md_0220_0780.log
+*** Error in `qdyn': free(): invalid next size (normal): 0x0000000001ace050 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x2ac69eb45299]
+qdyn[0x438281]
+qdyn[0x4384af]
+qdyn[0x43a9d2]
+qdyn[0x46b91f]
+qdyn[0x402c25]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ac69eae6555]
+qdyn[0x402d35]
+======= Memory map: ========
+00400000-004f9000 r-xp 00000000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004f9000-004fa000 r--p 000f8000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fa000-004fc000 rw-p 000f9000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fc000-0056c000 rw-p 00000000 00:00 0 
+01ac0000-01e8d000 rw-p 00000000 00:00 0                                  [heap]
+2ac69e59e000-2ac69e5c0000 r-xp 00000000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2ac69e5c0000-2ac69e5c2000 rw-p 00000000 00:00 0 
+2ac69e5cf000-2ac69e5d0000 rw-p 00000000 00:00 0 
+2ac69e5d0000-2ac69e5e8000 r-xp 00000000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2ac69e5e8000-2ac69e5e9000 r--p 00017000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2ac69e5e9000-2ac69e5ea000 rw-p 00018000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2ac69e5ea000-2ac69e630000 r-xp 00000000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2ac69e630000-2ac69e631000 r--p 00045000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2ac69e631000-2ac69e632000 rw-p 00046000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2ac69e632000-2ac69e636000 rw-p 00000000 00:00 0 
+2ac69e699000-2ac69e6f4000 rw-p 00000000 00:00 0 
+2ac69e775000-2ac69e7b6000 rw-p 00000000 00:00 0 
+2ac69e7bf000-2ac69e7c0000 r--p 00021000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2ac69e7c0000-2ac69e7c1000 rw-p 00022000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2ac69e7c1000-2ac69e7c2000 rw-p 00000000 00:00 0 
+2ac69e7c2000-2ac69e8c3000 r-xp 00000000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ac69e8c3000-2ac69eac2000 ---p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ac69eac2000-2ac69eac3000 r--p 00100000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ac69eac3000-2ac69eac4000 rw-p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ac69eac4000-2ac69ec88000 r-xp 00000000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ac69ec88000-2ac69ee87000 ---p 001c4000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ac69ee87000-2ac69ee8b000 r--p 001c3000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ac69ee8b000-2ac69ee8d000 rw-p 001c7000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ac69ee8d000-2ac69f3c4000 rw-p 00000000 00:00 0 
+2ac6a0000000-2ac6a0021000 rw-p 00000000 00:00 0 
+2ac6a0021000-2ac6a4000000 ---p 00000000 00:00 0 
+7ffe735ff000-7ffe73625000 rw-p 00000000 00:00 0                          [stack]
+7ffe7376a000-7ffe7376c000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2ac69eafa3ff in ???
+#1  0x2ac69eafa387 in ???
+#2  0x2ac69eafba77 in ???
+#3  0x2ac69eb3ced6 in ???
+#4  0x2ac69eb45298 in ???
+#5  0x438280 in ???
+#6  0x4384ae in ???
+#7  0x43a9d1 in ???
+#8  0x46b91e in ???
+#9  0x402c24 in ???
+#10  0x2ac69eae6554 in ???
+#11  0x402d34 in ???
+#12  0xffffffffffffffff in ???
+/var/spool/slurmd/job5494468/slurm_script: line 80:  6266 Aborted                 (core dumped) qdyn md_0200_0800.inp > md_0200_0800.log
+*** Error in `qdyn': free(): invalid next size (normal): 0x0000000001ca7050 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x2b9748878299]
+qdyn[0x438281]
+qdyn[0x4384af]
+qdyn[0x43a9d2]
+qdyn[0x46b91f]
+qdyn[0x402c25]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b9748819555]
+qdyn[0x402d35]
+======= Memory map: ========
+00400000-004f9000 r-xp 00000000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004f9000-004fa000 r--p 000f8000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fa000-004fc000 rw-p 000f9000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fc000-0056c000 rw-p 00000000 00:00 0 
+01c99000-02066000 rw-p 00000000 00:00 0                                  [heap]
+2b97482d1000-2b97482f3000 r-xp 00000000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b97482f3000-2b97482f5000 rw-p 00000000 00:00 0 
+2b9748302000-2b9748303000 rw-p 00000000 00:00 0 
+2b9748303000-2b974831b000 r-xp 00000000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b974831b000-2b974831c000 r--p 00017000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b974831c000-2b974831d000 rw-p 00018000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b974831d000-2b9748363000 r-xp 00000000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b9748363000-2b9748364000 r--p 00045000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b9748364000-2b9748365000 rw-p 00046000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b9748365000-2b9748369000 rw-p 00000000 00:00 0 
+2b97483cc000-2b9748427000 rw-p 00000000 00:00 0 
+2b97484a8000-2b97484e9000 rw-p 00000000 00:00 0 
+2b97484f2000-2b97484f3000 r--p 00021000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b97484f3000-2b97484f4000 rw-p 00022000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b97484f4000-2b97484f5000 rw-p 00000000 00:00 0 
+2b97484f5000-2b97485f6000 r-xp 00000000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b97485f6000-2b97487f5000 ---p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b97487f5000-2b97487f6000 r--p 00100000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b97487f6000-2b97487f7000 rw-p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b97487f7000-2b97489bb000 r-xp 00000000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b97489bb000-2b9748bba000 ---p 001c4000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b9748bba000-2b9748bbe000 r--p 001c3000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b9748bbe000-2b9748bc0000 rw-p 001c7000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b9748bc0000-2b97490f7000 rw-p 00000000 00:00 0 
+2b974c000000-2b974c021000 rw-p 00000000 00:00 0 
+2b974c021000-2b9750000000 ---p 00000000 00:00 0 
+7ffe9b570000-7ffe9b596000 rw-p 00000000 00:00 0                          [stack]
+7ffe9b5a2000-7ffe9b5a4000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2b974882d3ff in ???
+#1  0x2b974882d387 in ???
+#2  0x2b974882ea77 in ???
+#3  0x2b974886fed6 in ???
+#4  0x2b9748878298 in ???
+#5  0x438280 in ???
+#6  0x4384ae in ???
+#7  0x43a9d1 in ???
+#8  0x46b91e in ???
+#9  0x402c24 in ???
+#10  0x2b9748819554 in ???
+#11  0x402d34 in ???
+#12  0xffffffffffffffff in ???
+/var/spool/slurmd/job5494468/slurm_script: line 81:  6267 Aborted                 (core dumped) qdyn md_0180_0820.inp > md_0180_0820.log
+*** Error in `qdyn': free(): invalid next size (normal): 0x0000000000713050 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x2afa9d635299]
+qdyn[0x438281]
+qdyn[0x4384af]
+qdyn[0x43a9d2]
+qdyn[0x46b91f]
+qdyn[0x402c25]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2afa9d5d6555]
+qdyn[0x402d35]
+======= Memory map: ========
+00400000-004f9000 r-xp 00000000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004f9000-004fa000 r--p 000f8000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fa000-004fc000 rw-p 000f9000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fc000-0056c000 rw-p 00000000 00:00 0 
+00705000-00bc9000 rw-p 00000000 00:00 0                                  [heap]
+2afa9d08e000-2afa9d0b0000 r-xp 00000000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2afa9d0b0000-2afa9d0b2000 rw-p 00000000 00:00 0 
+2afa9d0bf000-2afa9d0c0000 rw-p 00000000 00:00 0 
+2afa9d0c0000-2afa9d0d8000 r-xp 00000000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2afa9d0d8000-2afa9d0d9000 r--p 00017000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2afa9d0d9000-2afa9d0da000 rw-p 00018000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2afa9d0da000-2afa9d120000 r-xp 00000000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2afa9d120000-2afa9d121000 r--p 00045000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2afa9d121000-2afa9d122000 rw-p 00046000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2afa9d122000-2afa9d126000 rw-p 00000000 00:00 0 
+2afa9d189000-2afa9d1e4000 rw-p 00000000 00:00 0 
+2afa9d265000-2afa9d2a6000 rw-p 00000000 00:00 0 
+2afa9d2af000-2afa9d2b0000 r--p 00021000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2afa9d2b0000-2afa9d2b1000 rw-p 00022000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2afa9d2b1000-2afa9d2b2000 rw-p 00000000 00:00 0 
+2afa9d2b2000-2afa9d3b3000 r-xp 00000000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2afa9d3b3000-2afa9d5b2000 ---p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2afa9d5b2000-2afa9d5b3000 r--p 00100000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2afa9d5b3000-2afa9d5b4000 rw-p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2afa9d5b4000-2afa9d778000 r-xp 00000000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2afa9d778000-2afa9d977000 ---p 001c4000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2afa9d977000-2afa9d97b000 r--p 001c3000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2afa9d97b000-2afa9d97d000 rw-p 001c7000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2afa9d97d000-2afa9deb4000 rw-p 00000000 00:00 0 
+2afaa0000000-2afaa0021000 rw-p 00000000 00:00 0 
+2afaa0021000-2afaa4000000 ---p 00000000 00:00 0 
+7ffe3b981000-7ffe3b9a7000 rw-p 00000000 00:00 0                          [stack]
+7ffe3b9b0000-7ffe3b9b2000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2afa9d5ea3ff in ???
+#1  0x2afa9d5ea387 in ???
+#2  0x2afa9d5eba77 in ???
+#3  0x2afa9d62ced6 in ???
+#4  0x2afa9d635298 in ???
+#5  0x438280 in ???
+#6  0x4384ae in ???
+#7  0x43a9d1 in ???
+#8  0x46b91e in ???
+#9  0x402c24 in ???
+#10  0x2afa9d5d6554 in ???
+#11  0x402d34 in ???
+#12  0xffffffffffffffff in ???
+/var/spool/slurmd/job5494468/slurm_script: line 82:  6268 Aborted                 (core dumped) qdyn md_0160_0840.inp > md_0160_0840.log
+*** Error in `qdyn': free(): invalid next size (normal): 0x0000000001ae8050 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x2b5c21037299]
+qdyn[0x438281]
+qdyn[0x4384af]
+qdyn[0x43a9d2]
+qdyn[0x46b91f]
+qdyn[0x402c25]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b5c20fd8555]
+qdyn[0x402d35]
+======= Memory map: ========
+00400000-004f9000 r-xp 00000000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004f9000-004fa000 r--p 000f8000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fa000-004fc000 rw-p 000f9000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fc000-0056c000 rw-p 00000000 00:00 0 
+01ada000-01f83000 rw-p 00000000 00:00 0                                  [heap]
+2b5c20a90000-2b5c20ab2000 r-xp 00000000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b5c20ab2000-2b5c20ab4000 rw-p 00000000 00:00 0 
+2b5c20ac1000-2b5c20ac2000 rw-p 00000000 00:00 0 
+2b5c20ac2000-2b5c20ada000 r-xp 00000000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b5c20ada000-2b5c20adb000 r--p 00017000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b5c20adb000-2b5c20adc000 rw-p 00018000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b5c20adc000-2b5c20b22000 r-xp 00000000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b5c20b22000-2b5c20b23000 r--p 00045000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b5c20b23000-2b5c20b24000 rw-p 00046000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b5c20b24000-2b5c20b28000 rw-p 00000000 00:00 0 
+2b5c20b8b000-2b5c20be6000 rw-p 00000000 00:00 0 
+2b5c20c67000-2b5c20ca8000 rw-p 00000000 00:00 0 
+2b5c20cb1000-2b5c20cb2000 r--p 00021000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b5c20cb2000-2b5c20cb3000 rw-p 00022000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b5c20cb3000-2b5c20cb4000 rw-p 00000000 00:00 0 
+2b5c20cb4000-2b5c20db5000 r-xp 00000000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b5c20db5000-2b5c20fb4000 ---p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b5c20fb4000-2b5c20fb5000 r--p 00100000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b5c20fb5000-2b5c20fb6000 rw-p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b5c20fb6000-2b5c2117a000 r-xp 00000000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b5c2117a000-2b5c21379000 ---p 001c4000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b5c21379000-2b5c2137d000 r--p 001c3000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b5c2137d000-2b5c2137f000 rw-p 001c7000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b5c2137f000-2b5c218b6000 rw-p 00000000 00:00 0 
+2b5c24000000-2b5c24021000 rw-p 00000000 00:00 0 
+2b5c24021000-2b5c28000000 ---p 00000000 00:00 0 
+7ffcaec19000-7ffcaec3f000 rw-p 00000000 00:00 0                          [stack]
+7ffcaed7e000-7ffcaed80000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2b5c20fec3ff in ???
+#1  0x2b5c20fec387 in ???
+#2  0x2b5c20feda77 in ???
+#3  0x2b5c2102eed6 in ???
+#4  0x2b5c21037298 in ???
+#5  0x438280 in ???
+#6  0x4384ae in ???
+#7  0x43a9d1 in ???
+#8  0x46b91e in ???
+#9  0x402c24 in ???
+#10  0x2b5c20fd8554 in ???
+#11  0x402d34 in ???
+#12  0xffffffffffffffff in ???
+/var/spool/slurmd/job5494468/slurm_script: line 83:  6269 Aborted                 (core dumped) qdyn md_0140_0860.inp > md_0140_0860.log
+*** Error in `qdyn': free(): invalid next size (normal): 0x00000000005a8050 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x2b6ab00a3299]
+qdyn[0x438281]
+qdyn[0x4384af]
+qdyn[0x43a9d2]
+qdyn[0x46b91f]
+qdyn[0x402c25]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b6ab0044555]
+qdyn[0x402d35]
+======= Memory map: ========
+00400000-004f9000 r-xp 00000000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004f9000-004fa000 r--p 000f8000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fa000-004fc000 rw-p 000f9000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fc000-0056c000 rw-p 00000000 00:00 0 
+0059a000-00af1000 rw-p 00000000 00:00 0                                  [heap]
+2b6aafafc000-2b6aafb1e000 r-xp 00000000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b6aafb1e000-2b6aafb20000 rw-p 00000000 00:00 0 
+2b6aafb2d000-2b6aafb2e000 rw-p 00000000 00:00 0 
+2b6aafb2e000-2b6aafb46000 r-xp 00000000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b6aafb46000-2b6aafb47000 r--p 00017000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b6aafb47000-2b6aafb48000 rw-p 00018000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b6aafb48000-2b6aafb8e000 r-xp 00000000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b6aafb8e000-2b6aafb8f000 r--p 00045000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b6aafb8f000-2b6aafb90000 rw-p 00046000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b6aafb90000-2b6aafb94000 rw-p 00000000 00:00 0 
+2b6aafbf7000-2b6aafc52000 rw-p 00000000 00:00 0 
+2b6aafcd3000-2b6aafd14000 rw-p 00000000 00:00 0 
+2b6aafd1d000-2b6aafd1e000 r--p 00021000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b6aafd1e000-2b6aafd1f000 rw-p 00022000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b6aafd1f000-2b6aafd20000 rw-p 00000000 00:00 0 
+2b6aafd20000-2b6aafe21000 r-xp 00000000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b6aafe21000-2b6ab0020000 ---p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b6ab0020000-2b6ab0021000 r--p 00100000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b6ab0021000-2b6ab0022000 rw-p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b6ab0022000-2b6ab01e6000 r-xp 00000000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b6ab01e6000-2b6ab03e5000 ---p 001c4000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b6ab03e5000-2b6ab03e9000 r--p 001c3000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b6ab03e9000-2b6ab03eb000 rw-p 001c7000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b6ab03eb000-2b6ab0922000 rw-p 00000000 00:00 0 
+2b6ab4000000-2b6ab4021000 rw-p 00000000 00:00 0 
+2b6ab4021000-2b6ab8000000 ---p 00000000 00:00 0 
+7ffc3f411000-7ffc3f437000 rw-p 00000000 00:00 0                          [stack]
+7ffc3f443000-7ffc3f445000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2b6ab00583ff in ???
+#1  0x2b6ab0058387 in ???
+#2  0x2b6ab0059a77 in ???
+#3  0x2b6ab009aed6 in ???
+#4  0x2b6ab00a3298 in ???
+#5  0x438280 in ???
+#6  0x4384ae in ???
+#7  0x43a9d1 in ???
+#8  0x46b91e in ???
+#9  0x402c24 in ???
+#10  0x2b6ab0044554 in ???
+#11  0x402d34 in ???
+#12  0xffffffffffffffff in ???
+/var/spool/slurmd/job5494468/slurm_script: line 84:  6270 Aborted                 (core dumped) qdyn md_0120_0880.inp > md_0120_0880.log
+*** Error in `qdyn': free(): invalid next size (normal): 0x0000000000d19050 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x2afa4b824299]
+qdyn[0x438281]
+qdyn[0x4384af]
+qdyn[0x43a9d2]
+qdyn[0x46b91f]
+qdyn[0x402c25]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2afa4b7c5555]
+qdyn[0x402d35]
+======= Memory map: ========
+00400000-004f9000 r-xp 00000000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004f9000-004fa000 r--p 000f8000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fa000-004fc000 rw-p 000f9000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fc000-0056c000 rw-p 00000000 00:00 0 
+00d0b000-0121c000 rw-p 00000000 00:00 0                                  [heap]
+2afa4b27d000-2afa4b29f000 r-xp 00000000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2afa4b29f000-2afa4b2a1000 rw-p 00000000 00:00 0 
+2afa4b2ae000-2afa4b2af000 rw-p 00000000 00:00 0 
+2afa4b2af000-2afa4b2c7000 r-xp 00000000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2afa4b2c7000-2afa4b2c8000 r--p 00017000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2afa4b2c8000-2afa4b2c9000 rw-p 00018000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2afa4b2c9000-2afa4b30f000 r-xp 00000000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2afa4b30f000-2afa4b310000 r--p 00045000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2afa4b310000-2afa4b311000 rw-p 00046000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2afa4b311000-2afa4b315000 rw-p 00000000 00:00 0 
+2afa4b378000-2afa4b3d3000 rw-p 00000000 00:00 0 
+2afa4b454000-2afa4b495000 rw-p 00000000 00:00 0 
+2afa4b49e000-2afa4b49f000 r--p 00021000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2afa4b49f000-2afa4b4a0000 rw-p 00022000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2afa4b4a0000-2afa4b4a1000 rw-p 00000000 00:00 0 
+2afa4b4a1000-2afa4b5a2000 r-xp 00000000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2afa4b5a2000-2afa4b7a1000 ---p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2afa4b7a1000-2afa4b7a2000 r--p 00100000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2afa4b7a2000-2afa4b7a3000 rw-p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2afa4b7a3000-2afa4b967000 r-xp 00000000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2afa4b967000-2afa4bb66000 ---p 001c4000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2afa4bb66000-2afa4bb6a000 r--p 001c3000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2afa4bb6a000-2afa4bb6c000 rw-p 001c7000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2afa4bb6c000-2afa4c0a3000 rw-p 00000000 00:00 0 
+2afa50000000-2afa50021000 rw-p 00000000 00:00 0 
+2afa50021000-2afa54000000 ---p 00000000 00:00 0 
+7ffd2ca95000-7ffd2cabb000 rw-p 00000000 00:00 0                          [stack]
+7ffd2cb82000-7ffd2cb84000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2afa4b7d93ff in ???
+#1  0x2afa4b7d9387 in ???
+#2  0x2afa4b7daa77 in ???
+#3  0x2afa4b81bed6 in ???
+#4  0x2afa4b824298 in ???
+#5  0x438280 in ???
+#6  0x4384ae in ???
+#7  0x43a9d1 in ???
+#8  0x46b91e in ???
+#9  0x402c24 in ???
+#10  0x2afa4b7c5554 in ???
+#11  0x402d34 in ???
+#12  0xffffffffffffffff in ???
+/var/spool/slurmd/job5494468/slurm_script: line 85:  6271 Aborted                 (core dumped) qdyn md_0100_0900.inp > md_0100_0900.log
+*** Error in `qdyn': free(): invalid next size (normal): 0x0000000001f9e050 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x2ab45d4a5299]
+qdyn[0x438281]
+qdyn[0x4384af]
+qdyn[0x43a9d2]
+qdyn[0x46b91f]
+qdyn[0x402c25]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ab45d446555]
+qdyn[0x402d35]
+======= Memory map: ========
+00400000-004f9000 r-xp 00000000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004f9000-004fa000 r--p 000f8000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fa000-004fc000 rw-p 000f9000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fc000-0056c000 rw-p 00000000 00:00 0 
+01f90000-02463000 rw-p 00000000 00:00 0                                  [heap]
+2ab45cefe000-2ab45cf20000 r-xp 00000000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2ab45cf20000-2ab45cf22000 r-xp 00000000 00:00 0                          [vdso]
+2ab45cf22000-2ab45cf24000 rw-p 00000000 00:00 0 
+2ab45cf31000-2ab45cf32000 rw-p 00000000 00:00 0 
+2ab45cf32000-2ab45cf4a000 r-xp 00000000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2ab45cf4a000-2ab45cf4b000 r--p 00017000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2ab45cf4b000-2ab45cf4c000 rw-p 00018000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2ab45cf4c000-2ab45cf92000 r-xp 00000000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2ab45cf92000-2ab45cf93000 r--p 00045000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2ab45cf93000-2ab45cf94000 rw-p 00046000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2ab45cf94000-2ab45cf98000 rw-p 00000000 00:00 0 
+2ab45cffb000-2ab45d056000 rw-p 00000000 00:00 0 
+2ab45d0d7000-2ab45d118000 rw-p 00000000 00:00 0 
+2ab45d11f000-2ab45d120000 r--p 00021000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2ab45d120000-2ab45d121000 rw-p 00022000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2ab45d121000-2ab45d122000 rw-p 00000000 00:00 0 
+2ab45d122000-2ab45d223000 r-xp 00000000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ab45d223000-2ab45d422000 ---p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ab45d422000-2ab45d423000 r--p 00100000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ab45d423000-2ab45d424000 rw-p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2ab45d424000-2ab45d5e8000 r-xp 00000000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ab45d5e8000-2ab45d7e7000 ---p 001c4000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ab45d7e7000-2ab45d7eb000 r--p 001c3000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ab45d7eb000-2ab45d7ed000 rw-p 001c7000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2ab45d7ed000-2ab45dd24000 rw-p 00000000 00:00 0 
+2ab460000000-2ab460021000 rw-p 00000000 00:00 0 
+2ab460021000-2ab464000000 ---p 00000000 00:00 0 
+7ffd3a034000-7ffd3a05a000 rw-p 00000000 00:00 0                          [stack]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2ab45d45a3ff in ???
+#1  0x2ab45d45a387 in ???
+#2  0x2ab45d45ba77 in ???
+#3  0x2ab45d49ced6 in ???
+#4  0x2ab45d4a5298 in ???
+#5  0x438280 in ???
+#6  0x4384ae in ???
+#7  0x43a9d1 in ???
+#8  0x46b91e in ???
+#9  0x402c24 in ???
+#10  0x2ab45d446554 in ???
+#11  0x402d34 in ???
+#12  0xffffffffffffffff in ???
+/var/spool/slurmd/job5494468/slurm_script: line 86:  6272 Aborted                 (core dumped) qdyn md_0080_0920.inp > md_0080_0920.log
+*** Error in `qdyn': free(): invalid next size (normal): 0x0000000000dc6050 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x2b7d17ce7299]
+qdyn[0x438281]
+qdyn[0x4384af]
+qdyn[0x43a9d2]
+qdyn[0x46b91f]
+qdyn[0x402c25]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b7d17c88555]
+qdyn[0x402d35]
+======= Memory map: ========
+00400000-004f9000 r-xp 00000000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004f9000-004fa000 r--p 000f8000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fa000-004fc000 rw-p 000f9000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fc000-0056c000 rw-p 00000000 00:00 0 
+00db8000-0125a000 rw-p 00000000 00:00 0                                  [heap]
+2b7d17740000-2b7d17762000 r-xp 00000000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b7d17762000-2b7d17764000 rw-p 00000000 00:00 0 
+2b7d17771000-2b7d17772000 rw-p 00000000 00:00 0 
+2b7d17772000-2b7d1778a000 r-xp 00000000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b7d1778a000-2b7d1778b000 r--p 00017000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b7d1778b000-2b7d1778c000 rw-p 00018000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b7d1778c000-2b7d177d2000 r-xp 00000000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b7d177d2000-2b7d177d3000 r--p 00045000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b7d177d3000-2b7d177d4000 rw-p 00046000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b7d177d4000-2b7d177d8000 rw-p 00000000 00:00 0 
+2b7d1783b000-2b7d17896000 rw-p 00000000 00:00 0 
+2b7d17917000-2b7d17958000 rw-p 00000000 00:00 0 
+2b7d17961000-2b7d17962000 r--p 00021000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b7d17962000-2b7d17963000 rw-p 00022000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b7d17963000-2b7d17964000 rw-p 00000000 00:00 0 
+2b7d17964000-2b7d17a65000 r-xp 00000000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b7d17a65000-2b7d17c64000 ---p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b7d17c64000-2b7d17c65000 r--p 00100000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b7d17c65000-2b7d17c66000 rw-p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b7d17c66000-2b7d17e2a000 r-xp 00000000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b7d17e2a000-2b7d18029000 ---p 001c4000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b7d18029000-2b7d1802d000 r--p 001c3000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b7d1802d000-2b7d1802f000 rw-p 001c7000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b7d1802f000-2b7d18566000 rw-p 00000000 00:00 0 
+2b7d1c000000-2b7d1c021000 rw-p 00000000 00:00 0 
+2b7d1c021000-2b7d20000000 ---p 00000000 00:00 0 
+7ffee6df5000-7ffee6e1b000 rw-p 00000000 00:00 0                          [stack]
+7ffee6f1f000-7ffee6f21000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2b7d17c9c3ff in ???
+#1  0x2b7d17c9c387 in ???
+#2  0x2b7d17c9da77 in ???
+#3  0x2b7d17cdeed6 in ???
+#4  0x2b7d17ce7298 in ???
+#5  0x438280 in ???
+#6  0x4384ae in ???
+#7  0x43a9d1 in ???
+#8  0x46b91e in ???
+#9  0x402c24 in ???
+#10  0x2b7d17c88554 in ???
+#11  0x402d34 in ???
+#12  0xffffffffffffffff in ???
+/var/spool/slurmd/job5494468/slurm_script: line 87:  6274 Aborted                 (core dumped) qdyn md_0060_0940.inp > md_0060_0940.log
+*** Error in `qdyn': free(): invalid next size (normal): 0x000000000126e050 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x2b8a9e15b299]
+qdyn[0x438281]
+qdyn[0x4384af]
+qdyn[0x43a9d2]
+qdyn[0x46b91f]
+qdyn[0x402c25]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b8a9e0fc555]
+qdyn[0x402d35]
+======= Memory map: ========
+00400000-004f9000 r-xp 00000000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004f9000-004fa000 r--p 000f8000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fa000-004fc000 rw-p 000f9000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fc000-0056c000 rw-p 00000000 00:00 0 
+01260000-016de000 rw-p 00000000 00:00 0                                  [heap]
+2b8a9dbb4000-2b8a9dbd6000 r-xp 00000000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b8a9dbd6000-2b8a9dbd8000 rw-p 00000000 00:00 0 
+2b8a9dbe5000-2b8a9dbe6000 rw-p 00000000 00:00 0 
+2b8a9dbe6000-2b8a9dbfe000 r-xp 00000000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b8a9dbfe000-2b8a9dbff000 r--p 00017000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b8a9dbff000-2b8a9dc00000 rw-p 00018000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b8a9dc00000-2b8a9dc46000 r-xp 00000000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b8a9dc46000-2b8a9dc47000 r--p 00045000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b8a9dc47000-2b8a9dc48000 rw-p 00046000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b8a9dc48000-2b8a9dc4c000 rw-p 00000000 00:00 0 
+2b8a9dcaf000-2b8a9dd0a000 rw-p 00000000 00:00 0 
+2b8a9dd8b000-2b8a9ddcc000 rw-p 00000000 00:00 0 
+2b8a9ddd5000-2b8a9ddd6000 r--p 00021000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b8a9ddd6000-2b8a9ddd7000 rw-p 00022000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b8a9ddd7000-2b8a9ddd8000 rw-p 00000000 00:00 0 
+2b8a9ddd8000-2b8a9ded9000 r-xp 00000000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b8a9ded9000-2b8a9e0d8000 ---p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b8a9e0d8000-2b8a9e0d9000 r--p 00100000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b8a9e0d9000-2b8a9e0da000 rw-p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b8a9e0da000-2b8a9e29e000 r-xp 00000000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b8a9e29e000-2b8a9e49d000 ---p 001c4000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b8a9e49d000-2b8a9e4a1000 r--p 001c3000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b8a9e4a1000-2b8a9e4a3000 rw-p 001c7000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b8a9e4a3000-2b8a9e9da000 rw-p 00000000 00:00 0 
+2b8aa0000000-2b8aa0021000 rw-p 00000000 00:00 0 
+2b8aa0021000-2b8aa4000000 ---p 00000000 00:00 0 
+7ffcf7e40000-7ffcf7e66000 rw-p 00000000 00:00 0                          [stack]
+7ffcf7e8c000-7ffcf7e8e000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2b8a9e1103ff in ???
+#1  0x2b8a9e110387 in ???
+#2  0x2b8a9e111a77 in ???
+#3  0x2b8a9e152ed6 in ???
+#4  0x2b8a9e15b298 in ???
+#5  0x438280 in ???
+#6  0x4384ae in ???
+#7  0x43a9d1 in ???
+#8  0x46b91e in ???
+#9  0x402c24 in ???
+#10  0x2b8a9e0fc554 in ???
+#11  0x402d34 in ???
+#12  0xffffffffffffffff in ???
+/var/spool/slurmd/job5494468/slurm_script: line 88:  6275 Aborted                 (core dumped) qdyn md_0040_0960.inp > md_0040_0960.log
+*** Error in `qdyn': free(): invalid next size (normal): 0x0000000001712050 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x2b18852eb299]
+qdyn[0x438281]
+qdyn[0x4384af]
+qdyn[0x43a9d2]
+qdyn[0x46b91f]
+qdyn[0x402c25]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b188528c555]
+qdyn[0x402d35]
+======= Memory map: ========
+00400000-004f9000 r-xp 00000000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004f9000-004fa000 r--p 000f8000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fa000-004fc000 rw-p 000f9000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fc000-0056c000 rw-p 00000000 00:00 0 
+01704000-01b6b000 rw-p 00000000 00:00 0                                  [heap]
+2b1884d44000-2b1884d66000 r-xp 00000000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b1884d66000-2b1884d68000 rw-p 00000000 00:00 0 
+2b1884d75000-2b1884d76000 rw-p 00000000 00:00 0 
+2b1884d76000-2b1884d8e000 r-xp 00000000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b1884d8e000-2b1884d8f000 r--p 00017000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b1884d8f000-2b1884d90000 rw-p 00018000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b1884d90000-2b1884dd6000 r-xp 00000000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b1884dd6000-2b1884dd7000 r--p 00045000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b1884dd7000-2b1884dd8000 rw-p 00046000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b1884dd8000-2b1884ddc000 rw-p 00000000 00:00 0 
+2b1884e3f000-2b1884e9a000 rw-p 00000000 00:00 0 
+2b1884f1b000-2b1884f5c000 rw-p 00000000 00:00 0 
+2b1884f65000-2b1884f66000 r--p 00021000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b1884f66000-2b1884f67000 rw-p 00022000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b1884f67000-2b1884f68000 rw-p 00000000 00:00 0 
+2b1884f68000-2b1885069000 r-xp 00000000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b1885069000-2b1885268000 ---p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b1885268000-2b1885269000 r--p 00100000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b1885269000-2b188526a000 rw-p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b188526a000-2b188542e000 r-xp 00000000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b188542e000-2b188562d000 ---p 001c4000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b188562d000-2b1885631000 r--p 001c3000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b1885631000-2b1885633000 rw-p 001c7000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b1885633000-2b1885b6a000 rw-p 00000000 00:00 0 
+2b1888000000-2b1888021000 rw-p 00000000 00:00 0 
+2b1888021000-2b188c000000 ---p 00000000 00:00 0 
+7fff3cf13000-7fff3cf39000 rw-p 00000000 00:00 0                          [stack]
+7fff3cfa0000-7fff3cfa2000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2b18852a03ff in ???
+#1  0x2b18852a0387 in ???
+#2  0x2b18852a1a77 in ???
+#3  0x2b18852e2ed6 in ???
+#4  0x2b18852eb298 in ???
+#5  0x438280 in ???
+#6  0x4384ae in ???
+#7  0x43a9d1 in ???
+#8  0x46b91e in ???
+#9  0x402c24 in ???
+#10  0x2b188528c554 in ???
+#11  0x402d34 in ???
+#12  0xffffffffffffffff in ???
+/var/spool/slurmd/job5494468/slurm_script: line 89:  6276 Aborted                 (core dumped) qdyn md_0020_0980.inp > md_0020_0980.log
+*** Error in `qdyn': free(): invalid next size (normal): 0x000000000063b050 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x2b22b967e299]
+qdyn[0x438281]
+qdyn[0x4384af]
+qdyn[0x43a9d2]
+qdyn[0x46b91f]
+qdyn[0x402c25]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b22b961f555]
+qdyn[0x402d35]
+======= Memory map: ========
+00400000-004f9000 r-xp 00000000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004f9000-004fa000 r--p 000f8000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fa000-004fc000 rw-p 000f9000 00:2b 4513903618386609457                /cluster/software/Q6/GCC-11.2.0/qdyn
+004fc000-0056c000 rw-p 00000000 00:00 0 
+0062d000-00a79000 rw-p 00000000 00:00 0                                  [heap]
+2b22b90d7000-2b22b90f9000 r-xp 00000000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b22b90f9000-2b22b90fb000 rw-p 00000000 00:00 0 
+2b22b9108000-2b22b9109000 rw-p 00000000 00:00 0 
+2b22b9109000-2b22b9121000 r-xp 00000000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b22b9121000-2b22b9122000 r--p 00017000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b22b9122000-2b22b9123000 rw-p 00018000 00:2b 2969904223911519978        /cluster/software/GCCcore/11.2.0/lib64/libgcc_s.so.1
+2b22b9123000-2b22b9169000 r-xp 00000000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b22b9169000-2b22b916a000 r--p 00045000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b22b916a000-2b22b916b000 rw-p 00046000 00:2b 14811736059288227865       /cluster/software/GCCcore/11.2.0/lib64/libquadmath.so.0.0.0
+2b22b916b000-2b22b916f000 rw-p 00000000 00:00 0 
+2b22b91d2000-2b22b922d000 rw-p 00000000 00:00 0 
+2b22b92ae000-2b22b92ef000 rw-p 00000000 00:00 0 
+2b22b92f8000-2b22b92f9000 r--p 00021000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b22b92f9000-2b22b92fa000 rw-p 00022000 fd:00 18498                      /usr/lib64/ld-2.17.so
+2b22b92fa000-2b22b92fb000 rw-p 00000000 00:00 0 
+2b22b92fb000-2b22b93fc000 r-xp 00000000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b22b93fc000-2b22b95fb000 ---p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b22b95fb000-2b22b95fc000 r--p 00100000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b22b95fc000-2b22b95fd000 rw-p 00101000 fd:00 18513                      /usr/lib64/libm-2.17.so
+2b22b95fd000-2b22b97c1000 r-xp 00000000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b22b97c1000-2b22b99c0000 ---p 001c4000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b22b99c0000-2b22b99c4000 r--p 001c3000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b22b99c4000-2b22b99c6000 rw-p 001c7000 fd:00 18505                      /usr/lib64/libc-2.17.so
+2b22b99c6000-2b22b9efd000 rw-p 00000000 00:00 0 
+2b22bc000000-2b22bc021000 rw-p 00000000 00:00 0 
+2b22bc021000-2b22c0000000 ---p 00000000 00:00 0 
+7ffeb32d1000-7ffeb32f7000 rw-p 00000000 00:00 0                          [stack]
+7ffeb3347000-7ffeb3349000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2b22b96333ff in ???
+#1  0x2b22b9633387 in ???
+#2  0x2b22b9634a77 in ???
+#3  0x2b22b9675ed6 in ???
+#4  0x2b22b967e298 in ???
+#5  0x438280 in ???
+#6  0x4384ae in ???
+#7  0x43a9d1 in ???
+#8  0x46b91e in ???
+#9  0x402c24 in ???
+#10  0x2b22b961f554 in ???
+#11  0x402d34 in ???
+#12  0xffffffffffffffff in ???
+/var/spool/slurmd/job5494468/slurm_script: line 90:  6277 Aborted                 (core dumped) qdyn md_0000_1000.inp > md_0000_1000.log
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+5494468          run.sh         20                                           1-07:33:57      6:0 
+5494468.bat+      batch         20        1 1-07:32:46          0 1-07:32:46 1-07:33:57      6:0 
+5494468.ext+     extern         20        1   00:00:00          0   00:00:00 1-07:33:58      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+5494468                                                                          
+5494468.bat+     46764K          0     46764K        0              0          0 
+5494468.ext+          0          0          0        0              0          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+5494468                                                                                               
+5494468.bat+      123.21M               0        123.21M      604.39M                0        604.39M 
+5494468.ext+        0.00M               0          0.00M            0                0              0 
+
+Job 5494468 completed at Sun Apr 24 04:53:12 CEST 2022
