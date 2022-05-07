@@ -1,0 +1,10 @@
+/cluster/work/users/user06/nodelete/biomolmod/practicals/EVB/enzyme/298/1 SEED_VAR: 5526
+/cluster/work/users/user06/nodelete/biomolmod/practicals/EVB/enzyme/298/2 SEED_VAR: 4011
+/cluster/work/users/user06/nodelete/biomolmod/practicals/EVB/enzyme/298/3 SEED_VAR: 8376
+/cluster/work/users/user06/nodelete/biomolmod/practicals/EVB/enzyme/298/4 SEED_VAR: 8836
+/cluster/work/users/user06/nodelete/biomolmod/practicals/EVB/enzyme/298/5 SEED_VAR: 7147
+/cluster/work/users/user06/nodelete/biomolmod/practicals/EVB/enzyme/298/6 SEED_VAR: 3177
+/cluster/work/users/user06/nodelete/biomolmod/practicals/EVB/enzyme/298/7 SEED_VAR: 8391
+/cluster/work/users/user06/nodelete/biomolmod/practicals/EVB/enzyme/298/8 SEED_VAR: 56
+/cluster/work/users/user06/nodelete/biomolmod/practicals/EVB/enzyme/298/9 SEED_VAR: 1946
+/cluster/work/users/user06/nodelete/biomolmod/practicals/EVB/enzyme/298/10 SEED_VAR: 2592

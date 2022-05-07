@@ -1,0 +1,29 @@
+Starting job 5571130 on c5-57 at Thu May 5 08:46:17 CEST 2022
+
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) StdEnv
+
+Task and CPU usage stats:
+JobID           JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+5571130          run.sh         20                                           1-19:29:23      0:0 
+5571130.bat+      batch         20        1 1-19:27:08          0 1-19:27:08 1-19:29:23      0:0 
+5571130.ext+     extern         20        1   00:00:00          0   00:00:00 1-19:29:23      0:0 
+
+Memory usage stats:
+JobID            MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+5571130                                                                          
+5571130.bat+     47548K          0     47548K        0              0          0 
+5571130.ext+          0          0          0        0              0          0 
+
+Disk usage stats:
+JobID         MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+5571130                                                                                               
+5571130.bat+      174.72M               0        174.72M      826.81M                0        826.81M 
+5571130.ext+        0.00M               0          0.00M            0                0              0 
+
+Job 5571130 completed at Sat May 7 04:15:41 CEST 2022
